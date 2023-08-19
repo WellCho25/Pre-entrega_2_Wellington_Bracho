@@ -1,8 +1,6 @@
-
-
 .navbar{
     height: 80px;
-    background-color: aqua !important;
+    background-color: rgb(255, 255, 255) !important;
     box-shadow: 0 0 5px black !important;
 }
 
@@ -12,27 +10,28 @@
 }
 
 .nav-link{
-    color: grey !important;
+    color: blue !important;
     font-weight: bold;
 }
 
 .navbar a:hover {
-    color: #fff !important;
+    color: grey !important;
 }
 
 .jumbotron{
-    height: 300px;
+    height: 400px;
     width: 100%;
     background-image: url(./imag/sever-gb2018909a_1280.jpg);
     background-position: center;
     background-size: cover;
+    /* border-radius: none !important; */
     /* filter: brightness(80%); */
 }
 
 .titulo{
-    /* border: 2px solid aqua; */
+    border: 2px solid aqua;
     border-radius: 5px;
-    /* background-color: #ffffffa4; */
+    background-color: #ffffffa4;
     /* filter: opacity(50%); */
     width: 500px;
     text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
@@ -61,19 +60,83 @@
     margin: 10px;
     margin-left: 150px;
     margin-right: 150px;
-    background-color: aqua;
-    color: white;
+    background-color: #fff;
+    color: blue;
     font-weight: bold;
     /* width: 100px; */
     text-decoration: none;
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    text-shadow: 0 0 2px black;
+    /* text-shadow: 0 0 2px black; */
 }
 
 .titulo a:hover{
     color: rgb(190, 190, 190) !important;
+}
+
+h2{
+    height: 50px;
+    padding-top: 3px;
+    margin-bottom: 0;
+}
+
+.sec_s {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.sec_s a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sec_s a:hover {
+    color: grey;
+}
+
+.ser{
+    background-color: rgba(127, 232, 255, 0.584);
+    background-image: url("./imag/matrix.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ser img{
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 100px 0 100px;
+    padding-top: 10px;
+    filter: grayscale(50%);
+}
+
+.ser img:hover{
+    transform: scale(0.97);
+    filter: grayscale(0%);
+}
+
+.ser h3{
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px black;
+}
+
+.ser p{
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px black;
+}
+
+
+
+
+
+.separacion {
+    height: 10px;
+    background-color: aqua;
 }
 
 @media only screen and (min-width:0) and (max-width:576px) {
