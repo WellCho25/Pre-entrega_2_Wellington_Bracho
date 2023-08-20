@@ -31,6 +31,17 @@
     /* filter: brightness(80%); */
 }
 
+.nos{
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid blueviolet; */
+    background-image: url(./imag/equipo.jpg);
+    background-position: center;
+    background-size: cover;
+    /* border-radius: none !important; */
+    /* filter: brightness(80%); */
+}
+
 .titulo{
     border: 2px solid aqua;
     border-radius: 5px;
