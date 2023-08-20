@@ -186,7 +186,7 @@ h2{
 
 .area{
     /* border: 2px solid green; */
-    padding-top: 35px;
+    padding-top: 25px;
     color: blue;
     font-size: bold;
     text-shadow: 0 2px 2px white;
@@ -194,8 +194,11 @@ h2{
 
 .ar_t{
     background-color: white;
-    border: blue;
+    border: 10px solid aqua;
+    border-style: groove;
     border-radius: 50%;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .area1{
@@ -207,6 +210,10 @@ h2{
 .area3{
     padding: 0;
     text-align: justify;
+}
+
+.area4{
+    padding: 10px;
 }
 
 .area5{
@@ -228,7 +235,7 @@ footer{
     background-color: aqua;
     color: blue;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     padding: 20px;
 }
 
@@ -267,9 +274,75 @@ footer i{
     
 }
 
-@media only screen and (min-width:576px) {
+@media only screen and (min-width:576px) and (max-width:920px){
     .grip_areas{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: repeat(4,200px);
+    }
+
+    .area1{
+        border: 10px solid aqua;
+        border-style: groove;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        padding-top: 40px;
+        margin: 0px;
+        margin: 30px 40% !important;
+    }
+    .area2{
+        border: 10px solid aqua;
+        border-style: groove;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-top: 50px;
+        margin: 0px;
+        margin: 20px 0px;
+    }
+    .area3{
+        grid-column: 1/2;
+        grid-row: 3/5;
+        padding-top: 8%;
+        padding: 0px 30px;
+    }
+    .area4{
+        border: 10px solid aqua;
+        border-style: groove;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-top: 40px;
+        margin: 0px;
+        margin: 20px 0px;
+    }
+    .area5{
+        grid-column: 2/3;
+        grid-row: 3/5;
+        padding-top: 8%;
+        padding: 0px 30px;
+    }
+    .area6{
+        border: 10px solid aqua;
+        border-style: groove;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        padding-top: 50px;
+        margin: 0px;
+        margin: 20px 0px;
+    }
+    .area7{
+        grid-column: 3/4;
+        grid-row: 3/5;
+        padding-top: 8%;
+        padding: 0px 30px;
+    }
+
+    .ar_t{
+        margin: 10% 10%;
+    }
+} 
+
+@media only screen and (min-width:920px) and (max-width:1024px){
+    .grip_areas{
+        grid-template-columns: repeat(4,25%);
         grid-template-rows: repeat(3,200px);
     }
 
@@ -279,15 +352,17 @@ footer i{
         grid-column: 1/2;
         grid-row: 2/3;
         padding-top: 50px;
-        margin: 40px;
-        margin: 20px 80px;
+        margin: 0px;
+        margin: 20px 10px;
     }
     .area2{
         border: 10px solid aqua;
         border-style: groove;
         grid-column: 2/3;
         grid-row: 1/2;
-        margin: 40px;
+        padding-top: 50px;
+        margin: 0px;
+        margin: 20px 0px;
     }
     .area3{
         grid-column: 3/5;
@@ -299,7 +374,9 @@ footer i{
         border-style: groove;
         grid-column: 2/3;
         grid-row: 2/3;
-        margin: 40px;
+        padding-top: 40px;
+        margin: 0px;
+        margin: 20px 0px;
     }
     .area5{
         grid-column: 3/5;
@@ -311,12 +388,83 @@ footer i{
         border-style: groove;
         grid-column: 2/3;
         grid-row: 3/4;
-        margin: 40px;
+        padding-top: 50px;
+        margin: 0px;
+        margin: 20px 0px;
     }
     .area7{
         grid-column: 3/5;
         grid-row: 3/4;
         padding-top: 8%;
+    }
+
+    .ar_t{
+        margin: 10% 10%;
+    }
+
+} 
+
+@media only screen and (min-width:1024px){
+    .grip_areas{
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: repeat(3,200px);
+    }
+
+    .area1{
+        border: 10px solid aqua;
+        border-style: groove;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-top: 40px;
+        margin: 0px;
+        margin: 20px 0px;
+    }
+    .area2{
+        border: 10px solid aqua;
+        border-style: groove;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-top: 50px;
+        margin: 0px;
+        margin: 20px 0px;
+    }
+    .area3{
+        grid-column: 3/5;
+        grid-row: 1/2;
+        padding-top: 8%;
+    }
+    .area4{
+        border: 10px solid aqua;
+        border-style: groove;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-top: 30px !important;
+        margin: 0px;
+        margin: 20px 0px;
+    }
+    .area5{
+        grid-column: 3/5;
+        grid-row: 2/3;
+        padding-top: 8%;
+    }
+    .area6{
+        border: 10px solid aqua;
+        border-style: groove;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-top: 50px;
+        margin: 0px;
+        margin: 20px 0px;
+    }
+    .area7{
+        grid-column: 3/5;
+        grid-row: 3/4;
+        padding-top: 8%;
+    }
+
+    .ar_t{
+        margin: 10% 20%;
+        padding-top: 40px;
     }
 
 } 
