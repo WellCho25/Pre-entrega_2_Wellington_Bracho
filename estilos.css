@@ -34,6 +34,8 @@
 .nos{
     height: 400px;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
     /* border: 2px solid blueviolet; */
     background-image: url(./imag/equipo.jpg);
     background-position: center;
@@ -49,6 +51,16 @@
     /* filter: opacity(50%); */
     width: 500px;
     text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+}
+
+.titulo_nos{
+    border: 2px solid aqua;
+    border-radius: 5px;
+    background-color: #ffffffa4;
+    /* filter: opacity(50%); */
+    width: 500px;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+    margin-bottom: 200px;
 }
 
 #titulo{
@@ -89,7 +101,7 @@
     color: rgb(190, 190, 190) !important;
 }
 
-h2{
+h2 {
     height: 50px;
     padding-top: 3px;
     margin-bottom: 0;
@@ -108,6 +120,23 @@ h2{
 }
 
 .sec_s a:hover {
+    color: grey;
+}
+
+.sec_n {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 4px 0px solid aqua;
+}
+
+.sec_n a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sec_n a:hover {
     color: grey;
 }
 
@@ -143,6 +172,26 @@ h2{
     text-align: center;
     color: #fff;
     text-shadow: 0 0 3px black;
+}
+
+.sec_h{
+    background-image: url(./imag/blur-3280300_1280.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo_nos img{
+    height: 300px;
+    width: fit-content;
+}
+
+.historia {
+    padding-top: 80px;
+    background-color: #fff;
+    opacity: 50%;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .sec_p {
