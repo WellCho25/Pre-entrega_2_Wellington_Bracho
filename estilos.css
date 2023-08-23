@@ -6,9 +6,17 @@
     /* border: 2px solid blueviolet; */
 }
 
+.navbar-collapse {
+    justify-content: right !important;
+}
+
 .navbar-brand img{
     height: 60px;
     border-radius: 30px;
+}
+
+.nav-item{
+    text-align: right;
 }
 
 .nav-link{
@@ -181,17 +189,44 @@ h2 {
 }
 
 .logo_nos img{
-    height: 300px;
-    width: fit-content;
+    height: 30vw;
+}
+
+.logo_nos img:hover{
+    transform: translate(280px,0px);
+    /* transition: width 2s; */
+    transition-timing-function: cubic-bezier(0,1.02,1,-0.01);
 }
 
 .historia {
     padding-top: 80px;
-    background-color: #fff;
-    opacity: 50%;
+    padding-bottom: 10px;
+    background-color: #ffffff58;
     color: blue;
     font-size: 20px;
     font-weight: bold;
+}
+
+.historia h4{
+    padding-left: 30px;
+}
+
+.text_h {
+    padding: 0px 20px;
+    border: 2px solid #ffffff00;
+    border-right: 2px solid white;
+    border-bottom: 5px solid white;
+    border-radius: 0px 0px 40px 0px;
+}
+
+.text_h h4{
+    text-shadow: 0 0 2px white;
+}
+
+.text_h p{
+    font-weight: normal;
+    color: grey;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black;
 }
 
 .sec_p {
@@ -233,6 +268,25 @@ h2 {
     color: #fff !important;
     margin: 30px;
     border-radius: 20px;
+}
+
+.sec_n{
+    border-bottom: 2px solid blue;
+}
+
+.sec_nos_en{
+    margin: 20px;
+}
+
+.sec_en{
+    border-left: 10px solid aqua;
+    border-bottom: 2px solid aqua;
+    background-color: rgba(43, 117, 166, 0.214);
+    margin-bottom: 20px;
+}
+
+.sec_en:hover{
+    transform: scale(1.01);
 }
 
 .grip_areas{
@@ -325,13 +379,21 @@ footer i{
 
 @media only screen and (min-width:0) and (max-width:576px) {
     .navbar-collapse{
-        background-color: aqua;
-        display: flex;
-        justify-content: center !important;
+        background-color: white;
+        margin-left: calc(250px - 1vh);
+        padding-right: 10px;
         box-shadow: 0 0 5px black !important;
-        /* width: 50px !important; */
+        width: 50px !important;
+        border-radius: 10px 0px 10px 10px;
     }
     
+}
+
+@media only screen and (min-width:576px) {
+    .historia {
+        padding-top: 50px !important;
+        padding-bottom: 20px;
+    }
 }
 
 @media only screen and (min-width:576px) and (max-width:920px){
@@ -398,7 +460,25 @@ footer i{
     .ar_t{
         margin: 10% 10%;
     }
-} 
+}
+
+@media only screen and (min-width:768px){
+    .logo_nos img{
+        padding-top: 1vw;
+        height: 20vw;
+    }
+
+    .historia {
+        padding-top: 30px !important;
+    }
+    
+    .logo_nos img:hover{
+        transform: translate(0px,350px);
+        /* transition: width 2s; */
+        transition-timing-function: cubic-bezier(0,1.02,1,-0.01);
+    }
+
+}
 
 @media only screen and (min-width:920px) and (max-width:1024px){
     .grip_areas{
